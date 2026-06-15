@@ -1,0 +1,59 @@
+/* Projects.module.css */
+
+.project {
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: color 0.15s;
+  cursor: default;
+}
+
+a.title:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.description {
+  font-size: 0.77rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+.tagLink {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tagLink:hover span {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

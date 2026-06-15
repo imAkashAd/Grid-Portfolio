@@ -1,0 +1,105 @@
+/* ui.module.css */
+
+/* ── Section Label ── */
+/* .sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+} */
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.64rem;
+  font-weight: 600;
+  font-family: var(--heading);
+  letter-spacing: 0.13em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+
+.sectionLabel::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 11px;
+  background: var(--accent);
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+/* ── Wavy Divider ── */
+.wavy {
+  border: none;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px, transparent 3px,
+    var(--border) 3px, var(--border) 4px
+  );
+  margin: 24px 0;
+  opacity: 0.7;
+}
+
+/* ── Tags ── */
+.tag {
+  display: inline-block;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border: 1px solid var(--border-2);
+  background: var(--surface);
+  color: var(--text-muted);
+  border-radius: var(--radius);
+  vertical-align: middle;
+}
+
+.tag_live     { border-color: var(--accent);  color: var(--accent);  background: var(--accent-dim); }
+.tag_mobile   { border-color: var(--orange);  color: var(--orange);  }
+.tag_web      { border-color: var(--accent2); color: var(--accent2); background: var(--accent2-dim); }
+.tag_ai       { border-color: var(--purple);  color: var(--purple);  }
+.tag_cli      { border-color: var(--yellow);  color: var(--yellow);  }
+.tag_research { border-color: var(--sky);     color: var(--sky);     }
+
+/* ── Chip ── */
+.chip {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: var(--surface-2);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Status Dot ── */
+.statusDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 229, 160, 0.4); }
+  50%       { opacity: 0.4; box-shadow: 0 0 0 4px rgba(0, 229, 160, 0); }
+}

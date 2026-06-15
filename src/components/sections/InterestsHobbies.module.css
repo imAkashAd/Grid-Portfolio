@@ -1,0 +1,19 @@
+/* InterestsHobbies.module.css */
+
+.block {
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.desc {
+  font-size: 0.73rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+  line-height: 1.55;
+}

@@ -1,0 +1,69 @@
+/* Academic.module.css */
+
+.subLabel {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.eduBlock {
+  margin-bottom: 18px;
+}
+
+.degree {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.institution {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+}
+
+.meta {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ── Certs ── */
+.certList { display: flex; flex-direction: column; gap: 7px; }
+
+.certItem {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.55;
+}
+
+.certItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ── Research ── */
+.interestBlock { margin-bottom: 14px; }
+
+.interestTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.interestDesc {
+  font-size: 0.73rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+  line-height: 1.55;
+}

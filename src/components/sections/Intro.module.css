@@ -1,0 +1,80 @@
+/* Intro.module.css */
+
+/* .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+} */
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--heading);
+  color: var(--white);
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+
+.titleLine {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+}
+
+.available {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.68rem;
+  color: var(--accent);
+  border: 1px solid rgba(0, 229, 160, 0.35);
+  background: var(--accent-dim);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+.introParagraphs { display: flex; flex-direction: column; gap: 10px; }
+
+.para {
+  font-size: 0.78rem;
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.65;
+}
+
+/* ── Links ── */
+.linkList { display: flex; flex-direction: column; gap: 7px; }
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.78rem;
+  color: #8fb4ff;
+  transition: color 0.15s;
+}
+
+.link:hover { color: var(--accent); }
+
+.linkIcon {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  width: 14px;
+}
+
+/* ── Skills ── */
+.skillGroup { margin-bottom: 14px; }
+
+.skillGroupTitle {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 7px;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }

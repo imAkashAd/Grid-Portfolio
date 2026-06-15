@@ -1,0 +1,64 @@
+/* Experience.module.css */
+
+.job {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.job:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.jobTitle {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.jobMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.company {
+  color: var(--accent);
+}
+
+.dot {
+  color: var(--border-2);
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 14px;
+  border-left: 2px solid var(--border);
+}
+
+.bullet {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  font-family: var(--sans);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 2px;
+}
+
+.bullet::before {
+  content: '→';
+  position: absolute;
+  left: -18px;
+  color: var(--accent);
+  font-size: 0.65rem;
+  top: 1px;
+}
